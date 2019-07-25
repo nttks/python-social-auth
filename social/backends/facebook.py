@@ -18,6 +18,7 @@ class FacebookOAuth2(BaseOAuth2):
     """Facebook OAuth2 authentication backend"""
     name = 'facebook'
     RESPONSE_TYPE = None
+    REDIRECT_STATE = False
     SCOPE_SEPARATOR = ','
     AUTHORIZATION_URL = 'https://www.facebook.com/v2.3/dialog/oauth'
     ACCESS_TOKEN_URL = 'https://graph.facebook.com/v2.3/oauth/access_token'
